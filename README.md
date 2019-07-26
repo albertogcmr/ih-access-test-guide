@@ -16,14 +16,6 @@ lst=[i for i in range(1, 11)]   # version pro
 
 print (lst)
 
-​
-
-​
-
-​
-
-​
-
 # 2º crear una nueva lista desde la primera de los numeros pares o impares
 
 ​
