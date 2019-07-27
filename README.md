@@ -1,23 +1,21 @@
 # Manual de la prueba de acceso para el Bootcamp de Data Analytics de Ironhack
 
-
 ## Propósito de este documento
 
 Con este documento pretendemos darte una ayuda para que pases la prueba técnica de acceso al bootcamp de Ironhack en análisis de datos y sepas a lo que te vas a enfrentar. Consistirá principalmente en resolver un problema básico de programación en Python. Los conceptos estadísticos necesarios serán mínimos.
 
 Contiene tres secciones: 
 * **Programación online**: para que practiques los ejemplos. 
-* **Conocimientos de Python**: para que sepas los conocimientos mínimos con ejemplos. 
-* **Ejemplo de prueba de acceso**: para que veas qué puedes encontrarte. 
-
+* **Conocimientos de Python**: para mostrarte los conocimientos mínimos con ejemplos. 
+* **Ejemplo de prueba de acceso**: para que veas qué puedes encontrarte cuando vengas. 
 
 ## Programación online
 
-Para que puedas programar sin tener que instalarte ningún software, hazte una cuenta en **repl**. Podrás practicar todo lo que quieras en muchos lenguajes de programación además de Python. Intenta probar a programar todo lo que se muestra en este documento, incluido el ejemplo de prueba de acceso. 
+Para programar sin tener que instalarte ningún software hazte una cuenta en **repl**. Podrás practicar todo lo que quieras en Python y en muchos otros lenguajes de programación. Intenta probar todo lo que se muestra en este documento, incluido el ejemplo de prueba de acceso. 
 
 https://repl.it/repls
 
-Sólo debes poner código en la sección blanca y darle al botón verde RUN.
+Sólo debes poner código en la sección blanca y darle al botón verde <span style="color:green">**RUN**</span>.
 ![repl](./images/repl-example.png) 
 
 ## Conocimientos de Python
@@ -68,7 +66,6 @@ Para escribir con el teclado y que la máquina lo almacene. Luego podremos usarl
 nombre = input("Escribe tu nombre: ")
 print("Hola", nombre, "!")
 ```
-
 
 ### Tipos de datos
 Para ver el tipo de variable que estamos usando: entero, número con decimales, cadena de carácteres, lista, etc. 
@@ -333,7 +330,7 @@ print (suma)
 
 ## Ejemplo de prueba de acceso
 
-A continuación hay una muestra de la antígua prueba de nivel. Ya no se suele pedir esto pero te puede dar una idea de lo que se te preguntará. Recomendamos que intentes resolver este problema antes de presentarte a la prueba. 
+A continuación hay una muestra de la antígua prueba de nivel. Ya no se suele pedir esto pero te puede dar una idea de lo que se te preguntará. **Recomendamos que resuelvas este problema antes de presentarte a la prueba**. 
 
 Dada una lista de números enteros: 
 ```python
