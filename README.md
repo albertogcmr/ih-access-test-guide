@@ -32,7 +32,7 @@ print("Hello World")
 ### Variables
 Para asignar valores a variables. 
 ```python
-# cadena de carácteres
+# cadena de caracteres
 mensaje = "Hello World"
 print(mensaje)
 
@@ -71,10 +71,10 @@ print("Hola", nombre, "!")
 ```
 
 ### Tipos de datos
-Para ver el tipo de variable que estamos usando: entero, número con decimales, cadena de carácteres, lista, etc. 
+Para ver el tipo de variable que estamos usando: entero, número con decimales, cadena de caracteres, lista, etc. 
 ```python
-# cadena de carácteres
-cadena = "Esto es una cadena de carácteres"
+# cadena de caracteres
+cadena = "Esto es una cadena de caracteres"
 tipo_cadena = type(cadena)
 print(tipo_cadena)
 
@@ -95,7 +95,7 @@ print(tipo_lista)
 ```
 
 ### Contar e indexar
-Para ver la longitud de algo que se pueda recorrer: lista, cadena de carácteres, tupla, diccionario, etc.
+Para ver la longitud de algo que se pueda recorrer: lista, cadena de caracteres, tupla, diccionario, etc.
 Para seleccionar un elemento por su índice
 ```python
 hechizo = "expeliarmus"
@@ -114,7 +114,7 @@ numeros = [3,4,3,5,7,4,3,1,1]
 ninjas = ['Naruto', 'Sakura', 'Sasuke', 'Hinata', 'Shikamaru']
 mezcla = ['apple', 390, 876, 'orange', 'highway', 0.42, 87]
 
-# Esto es una lista de listas qe asignamos a la variable de nombre matriz
+# Esto es una lista de listas que asignamos a la variable de nombre matriz
 matriz = [[3,4,5], [1,2,3], [7,3,2]]
 
 # Para seleccionar un elemento por su índice
@@ -207,7 +207,7 @@ Para la toma de decisiones.
 
 ```python
 entrada = input("Introduce un número entero: ")
-# convertimos la cadena de carácteres en entero. Esta operación se llama cast. 
+# convertimos la cadena de caracteres en entero. Esta operación se llama cast. 
 numero = int(entrada)
 
 # Ahora veamos que has puesto
