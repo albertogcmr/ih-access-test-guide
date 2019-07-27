@@ -166,6 +166,7 @@ print(opciones_peliculas)
 ```
 
 ### Diccionarios
+Para obtener un dato a partir de otro. La película **Alien** tiene una valoración de **9.5**. 
 ```python
 valoraciones = {'Alien':9.5, 'Terminator 2':8.9, 'Arma Letal':7.3}
 
@@ -193,7 +194,7 @@ print((100 > 75) or (93 < 80))
 print((93 < 80) or (3 not in [1,2,3,4,5]))
 ```
 ### Condicionales (if - elif - else)
-Para tomar decisiones
+Para la toma de decisiones.  
 ```python
 entrada = input("Introduce un número entero: ")
 # convertimos la cadena de carácteres en entero. Esta operación se llama cast. 
@@ -246,7 +247,7 @@ print(lista)
 
 
 ### Para los más pro
-1. Crear una lista del 1 al 10​
+1. Crear una lista del 1 al 10​. 
 
 ```python
 # version newbie
@@ -284,7 +285,7 @@ lst2=[e for e in lst if e%2==1]
 print (lst2)
 ```
 
-3. Cambiar pares/impares por 0/1
+3. Cambiar pares/impares por 0/1. 
 
 ```python
 # pares -> 0, impares -> 1​
@@ -317,7 +318,7 @@ print (lst3)
 lst3=[1 if e%2==0 else 0 for e in lst] 
 print (lst3)
 ```
-4. Sumar todos los elementos de la primera lista (dos versiones)
+4. Sumar todos los elementos de la primera lista (dos versiones). 
 ```python
 # version 1
 suma=0         
