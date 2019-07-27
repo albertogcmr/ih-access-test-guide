@@ -22,7 +22,7 @@ Sólo debes poner código en la sección blanca y darle al botón verde RUN.
 
 ## Conocimientos de Python
 
-Para pasar la prueba deberás tener unos conocimientos mínimos
+Para pasar la prueba deberás tener unos conocimientos mínimos. Los imprescidibles son: listas, bucles y condicionales. 
 
 ### Salida
 Para mostrar por pantalla un mensaje. 
@@ -112,6 +112,7 @@ La salsa de python. Las listas no tienen límite.
 numeros = [3,4,3,5,7,4,3,1,1]
 ninjas = ['Naruto', 'Sakura', 'Sasuke', 'Hinata', 'Shikamaru']
 mezcla = ['apple', 390, 876, 'orange', 'highway', 0.42, 87]
+# Esto es una lista de listas qe asignamos a la variable de nombre matriz
 matriz = [[3,4,5], [1,2,3], [7,3,2]]
 
 # Para seleccionar un elemento por su índice
@@ -207,7 +208,7 @@ else:
 	print("El número es mayor que 42")
 ```
 
-### Looping with Python
+### Bucles con Python
 Para automatizarlo todo. 
 ```python
 # Primer ejemplo: range
@@ -263,7 +264,8 @@ print (lst)
 # pares version newbie
 lst2=[]
 for e in lst:                   
-	if e%2==0: lst2.append(e)
+	if e%2==0: 
+		lst2.append(e)
 print (lst2)
 
 # pares version pro
@@ -333,17 +335,11 @@ print (suma)
 A continuación hay una muestra de la antígua prueba de nivel. Ya no se suele pedir esto pero te puede dar una idea de lo que se te preguntará. Recomendamos que intentes resolver este problema antes de presentarte a la prueba. 
 
 Dada una lista de números enteros: 
-1. Muestra por pantalla los números de esta lista que son mayores que 5.
-
 ```python
+# variables
 numeros = [1, 7, 6, 5, 4, 3, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 3, 4, 5, 6, 7]
-
-for numero in numeros: 
-	if numero > 5: 
-		print(numero)
 ```
-
-Obtendremos a la salida lo siguiente: 
+1. Muestra por pantalla los números de esta lista que son mayores que 5. Deberás obtener a la salida lo siguiente: 
 
 ```python
 7 
@@ -355,20 +351,7 @@ Obtendremos a la salida lo siguiente:
 7
 ```
 
-2. Indica cuántos números de la lista son mayores que 5.
-
-```python
-numeros = [1, 7, 6, 5, 4, 3, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 3, 4, 5, 6, 7]
-
-mayores = 0
-for numero in numeros: 
-	if numero > 5: 
-		mayores = mayores + 1
-
-print(mayores)
-```
-
-Obtendremos a la salida lo siguiente: 
+2. Indica cuántos números de la lista son mayores que 5. Deberás obtener a la salida lo siguiente: 
 
 ```python
 7
@@ -377,20 +360,8 @@ Obtendremos a la salida lo siguiente:
 3. Muestra por pantalla una nueva lista que traduzca los elementos de la lista original:
 	* Los menores o iguales que 5 serán 0,
 	* Los mayores que 5 serán 1.
-```python
-numeros = [1, 7, 6, 5, 4, 3, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 3, 4, 5, 6, 7]
-solucion = []
 
-for numero in numeros: 
-	if numero > 5: 
-		solucion.append(1)
-	else: 
-		solucion.append(0)
-
-print(solucion)
-```
-
-Obtendremos a la salida lo siguiente: 
+Deberás obtener a la salida lo siguiente: 
 
 ```python
 [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1]
