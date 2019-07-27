@@ -13,7 +13,7 @@ Contiene tres secciones:
 
 ## Programación online
 
-Para que puedas programar sin tener que instalarte ningún software, hazte una cuenta en **repl**. Podrás practicar todo lo que quieras en muchos lenguajes de programación además de Python. Intenta probar a programar todo lo que se muestra en este documento. 
+Para que puedas programar sin tener que instalarte ningún software, hazte una cuenta en **repl**. Podrás practicar todo lo que quieras en muchos lenguajes de programación además de Python. Intenta probar a programar todo lo que se muestra en este documento, incluido el ejemplo de prueba de acceso. 
 
 https://repl.it/repls
 
@@ -24,7 +24,7 @@ Sólo debes poner código en la sección blanca y darle al botón verde RUN.
 
 Para pasar la prueba deberás tener unos conocimientos mínimos
 
-### Output
+### Salida
 Para mostrar por pantalla un mensaje. 
 ```python
 print("Hello World")
@@ -44,7 +44,7 @@ z = a + b
 print(z)
 ```
 
-### Doing Math
+### Haciendo cálculos
 Python es una calculadora supervitaminada. 
 ```python
 suma = 39 + 3
@@ -52,15 +52,17 @@ resta = 15 - 13
 multiplicacion = 12 * 2
 division = 7 / 3
 division_entera = 7 // 3
+modulo = 7 % 3
 
 print(suma)
 print(resta)
 print(multiplicacion)
 print(division)
 print(division_entera)
+print(modulo)
 ```
 
-### Input
+### Entrada
 Para escribir con el teclado y que la máquina lo almacene. Luego podremos usarlo y mostrarlo por pantalla si queremos. 
 ```python
 nombre = input("Escribe tu nombre: ")
@@ -68,7 +70,7 @@ print("Hola", nombre, "!")
 ```
 
 
-### String and Numeric Data Types
+### Tipos de datos
 Para ver el tipo de variable que estamos usando: entero, número con decimales, cadena de carácteres, lista, etc. 
 ```python
 # cadena de carácteres
@@ -92,7 +94,7 @@ tipo_lista = type(lista)
 print(tipo_lista)
 ```
 
-### Counting and Indexing
+### Contar e indexar
 Para ver la longitud de algo que se pueda recorrer: lista, cadena de carácteres, tupla, diccionario, etc.
 Para seleccionar un elemento por su índice
 ```python
@@ -103,7 +105,7 @@ print(hechizo[1])
 print(hechizo[-1])
 ```
 
-### List
+### Listas
 La salsa de python. Las listas no tienen límite. 
 ```python
 # Ejemplos de listas. 
@@ -135,20 +137,20 @@ print(profesores)
 hogwards = estudiantes + profesores
 print(hogwards)
 
-### media de un conjunto de números
+# media de un conjunto de números
 numeros = [34, 12, 93, 783, 330, 896, 1, 55]
 suma = sum(numeros)
 longitud = len(numeros)
 media = suma / longitud
 print(media)
 
-### mínimo y máximo
+# mínimo y máximo
 minimo = min(numeros)
 maximo = max(numeros)
 print(minimo)
 print(maximo)
 
-### Ordenación
+# Ordenación
 numeros_ordenados = sorted(numeros)
 print(numeros_ordenados)
 ```
@@ -172,7 +174,7 @@ print(valoraciones.values())
 print(valoraciones.items())
 ```
 
-### Boolean Data Types
+### Tipos booleanos (True, False)
 _Ser o no ser._ `True o False`
 ```python
 print(5 + 5 == 10)
@@ -180,7 +182,7 @@ print('isla' != 'pantano')
 print(100 >= 75)
 print(93 <= 80)
 
-# para ver si un elemento se encuentra en un conjunto o lista
+# para ver si un elemento se encuentra en un conjunto o lista usaremos in
 print(3 in [1,2,3,4,5])
 print(3 not in [1,2,3,4,5])
 
@@ -189,7 +191,7 @@ print((100 > 75) and (93 < 80))
 print((100 > 75) or (93 < 80))
 print((93 < 80) or (3 not in [1,2,3,4,5]))
 ```
-### Conditional (If / elif / else)
+### Condicionales (if - elif - else)
 Para tomar decisiones
 ```python
 entrada = input("Introduce un número entero: ")
@@ -242,143 +244,93 @@ print(lista)
 ```
 
 
-Lo de Yonatan
+### Para los más pro
+1. Crear una lista del 1 al 10​
+
 ```python
-# 1º crear una lista del 1 al 10​
-
-lst=[1,2,3,4,5,6,7,8,9,10]      # version newbie
+# version newbie
+lst=[1,2,3,4,5,6,7,8,9,10]      
 print (lst)
 
-​lst=[i for i in range(1, 11)]   # version pro
+# version pro
+​lst=[i for i in range(1, 11)]   
 print (lst)
+```
 
-# 2º crear una nueva lista desde la primera de los numeros pares o impares
-# pares 
+2. Crear una nueva lista desde la primera de los numeros pares o impares. 
 
+```python
+# pares version newbie
 lst2=[]
-
-for e in lst:                   # version newbie
-
+for e in lst:                   
 	if e%2==0: lst2.append(e)
-
 print (lst2)
 
-
-lst2=[e for e in lst if e%2==0] # version pro
-
+# pares version pro
+lst2=[e for e in lst if e%2==0] 
 print (lst2)
 
-​
-
-# impares
-
+# impares version newbie
 lst2=[]
-
-for e in lst:                  # version newbie
-
-	if e%2==1: lst2.append(e)
-
+for e in lst: 
+	if e%2==1: 
+		lst2.append(e)
 print (lst2)
-
 ​
-
-​
-
-lst2=[e for e in lst if e%2==1] # version pro
-
+# impares version pro
+lst2=[e for e in lst if e%2==1]
 print (lst2)
+```
 
-​
+3. Cambiar pares/impares por 0/1
 
-​
+```python
+# pares -> 0, impares -> 1​
 
-# 3º cambiar pares/impares por 0-1
-
-​
-
-# pares==0, impares==1
-
-​
-
+# version newbie
 lst3=[]
-
-for e in lst:                   # version newbie
-
-	if e%2==0: lst3.append(0)
-
-	else: lst3.append(1)
-
+for e in lst:       
+	if e%2==0: 
+		lst3.append(0)
+	else: 
+		lst3.append(1)
 print (lst3)
 
-​
-
-​
-
-lst3=[0 if e%2==0 else 1 for e in lst]  # version pro
-
+​# version pro
+lst3=[0 if e%2==0 else 1 for e in lst] 
 print (lst3)
 
-​
+# pares -> 1, impares -> 0​
 
-​
-
-# pares==1, impares==0
-
-​
-
+# version newbie
 lst3=[]
-
-for e in lst:                     # version newbie
-
-	if e%2==0: lst3.append(1)
-
-	else: lst3.append(0)
-
-print (lst3)
-
-​
-
-​
-
-lst3=[1 if e%2==0 else 0 for e in lst]  # version pro
-
-print (lst3)
-
-​
-
-​
-
-​
-
-​
-
-# 4º sumar todos los elementos de la primera lista (dos versiones)
-
-​
-
-suma=0           # version 1
-
 for e in lst:
+	if e%2==0: 
+		lst3.append(1)
+	else: 
+		lst3.append(0)
+print (lst3)
 
+# version pro
+lst3=[1 if e%2==0 else 0 for e in lst] 
+print (lst3)
+```
+4. Sumar todos los elementos de la primera lista (dos versiones)
+```python
+# version 1
+suma=0         
+for e in lst:
 	suma+=e
-
 print (suma)
 
-​
-
-​
-
-suma=sum(lst)    # version 2
-
+# version 2
+suma=sum(lst)    
 print (suma)
-
-
-
 ```
 
 ## Ejemplo de prueba de acceso
 
-A continuación hay una muestra de la antígua prueba de nivel. Ya no se pide esto pero te puede dar una idea de lo que se te preguntará. Recomendamos que intentes resolver este problema antes de presentarte a la prueba. 
+A continuación hay una muestra de la antígua prueba de nivel. Ya no se suele pedir esto pero te puede dar una idea de lo que se te preguntará. Recomendamos que intentes resolver este problema antes de presentarte a la prueba. 
 
 Dada una lista de números enteros: 
 1. Muestra por pantalla los números de esta lista que son mayores que 5.
