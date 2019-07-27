@@ -16,11 +16,12 @@ Para programar sin tener que instalarte ningún software hazte una cuenta en **r
 https://repl.it/repls
 
 Sólo debes poner código en la sección blanca y darle al botón verde <span style="color:green">**RUN**</span>.
+
 ![repl](./images/repl-example.png) 
 
 ## Conocimientos de Python
 
-Para pasar la prueba deberás tener unos conocimientos mínimos. Los imprescidibles son: listas, bucles y condicionales. 
+Durante la prueba te pediremos que apliques algunos de los conceptos de esta sección. Los imprescidibles son: listas, bucles y condicionales. 
 
 ### Salida
 Para mostrar por pantalla un mensaje. 
@@ -29,13 +30,13 @@ print("Hello World")
 ```
 
 ### Variables
-Para asignar variables. 
+Para asignar valores a variables. 
 ```python
+# cadena de carácteres
 mensaje = "Hello World"
 print(mensaje)
-```
 
-```python
+# número entero
 a = 40
 b = 2
 z = a + b
@@ -45,6 +46,7 @@ print(z)
 ### Haciendo cálculos
 Python es una calculadora supervitaminada. 
 ```python
+# cálculos
 suma = 39 + 3
 resta = 15 - 13
 multiplicacion = 12 * 2
@@ -52,6 +54,7 @@ division = 7 / 3
 division_entera = 7 // 3
 modulo = 7 % 3
 
+# outputs
 print(suma)
 print(resta)
 print(multiplicacion)
@@ -75,12 +78,12 @@ cadena = "Esto es una cadena de carácteres"
 tipo_cadena = type(cadena)
 print(tipo_cadena)
 
-# entero
+# número entero
 entero = 42
 tipo_entero = type(entero)
 print(tipo_entero)
 
-# entero
+# número con decimales
 flotante = 42.42
 tipo_flotante = type(flotante)
 print(tipo_flotante)
@@ -96,6 +99,7 @@ Para ver la longitud de algo que se pueda recorrer: lista, cadena de carácteres
 Para seleccionar un elemento por su índice
 ```python
 hechizo = "expeliarmus"
+
 print(len(hechizo))
 print(hechizo[0])
 print(hechizo[1])
@@ -109,6 +113,7 @@ La salsa de python. Las listas no tienen límite.
 numeros = [3,4,3,5,7,4,3,1,1]
 ninjas = ['Naruto', 'Sakura', 'Sasuke', 'Hinata', 'Shikamaru']
 mezcla = ['apple', 390, 876, 'orange', 'highway', 0.42, 87]
+
 # Esto es una lista de listas qe asignamos a la variable de nombre matriz
 matriz = [[3,4,5], [1,2,3], [7,3,2]]
 
@@ -156,8 +161,12 @@ print(numeros_ordenados)
 ### Conjuntos
 Los conjuntos son agrupaciones de elementos pero no se almacenan repetidos. 
 ```python
+# lista con valores repetidos
 lista_peliculas_cine = ['Alien', 'Terminator 2', 'Arma Letal', 'Alien', 'Terminator 2']
+
+# conjunto con los valores de la lista sin repetir
 opciones_peliculas = set(lista_peliculas_cine)
+
 print(lista_peliculas_cine)
 print(opciones_peliculas)
 ```
@@ -165,8 +174,10 @@ print(opciones_peliculas)
 ### Diccionarios
 Para obtener un dato a partir de otro. La película **Alien** tiene una valoración de **9.5**. 
 ```python
+# diccionario de película y valoración dada
 valoraciones = {'Alien':9.5, 'Terminator 2':8.9, 'Arma Letal':7.3}
 
+# algunos métodos de diccionarios
 print(valoraciones['Alien'])
 print(valoraciones.keys())
 print(valoraciones.values())
@@ -190,8 +201,10 @@ print((100 > 75) and (93 < 80))
 print((100 > 75) or (93 < 80))
 print((93 < 80) or (3 not in [1,2,3,4,5]))
 ```
+
 ### Condicionales (if - elif - else)
 Para la toma de decisiones.  
+
 ```python
 entrada = input("Introduce un número entero: ")
 # convertimos la cadena de carácteres en entero. Esta operación se llama cast. 
@@ -208,6 +221,7 @@ else:
 
 ### Bucles con Python
 Para automatizarlo todo. 
+
 ```python
 # Primer ejemplo: range
 for numero in range(10):
@@ -241,7 +255,6 @@ for x in range(2, 6):
 	lista.append(numero)
 print(lista)
 ```
-
 
 ### Para los más pro
 1. Crear una lista del 1 al 10​. 
@@ -316,6 +329,7 @@ lst3=[1 if e%2==0 else 0 for e in lst]
 print (lst3)
 ```
 4. Sumar todos los elementos de la primera lista (dos versiones). 
+
 ```python
 # version 1
 suma=0         
