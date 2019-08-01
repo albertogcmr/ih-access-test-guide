@@ -205,7 +205,7 @@ print((93 < 80) or (3 not in [1,2,3,4,5]))
 ### Condicionales (if - elif - else)
 Para la toma de decisiones. 
 
-```python
+```python 
 entrada = input("Introduce un número entero: ")
 # convertimos la cadena de caracteres en entero. Esta operación se llama cast. 
 numero = int(entrada)
