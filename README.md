@@ -5,9 +5,9 @@
 Con este documento pretendemos darte una ayuda para que pases la prueba técnica de acceso al bootcamp de Ironhack en análisis de datos y sepas a lo que te vas a enfrentar. Consistirá principalmente en resolver un problema básico de programación en Python. Los conceptos estadísticos necesarios serán mínimos.
 
 Contiene tres secciones: 
-* **Programación online**: para que practiques los ejemplos. 
+* **Programación online**: para que practiques fácilmente tus códigos. 
 * **Conocimientos de Python**: para mostrarte los conocimientos mínimos con ejemplos. 
-* **Ejemplo de prueba de acceso**: para que veas qué puedes encontrarte cuando vengas. 
+* **Ejemplo de prueba de acceso**: para que lo resuelvas y nos envíes tu solución. 
 
 ## Programación online
 
@@ -203,7 +203,7 @@ print((93 < 80) or (3 not in [1,2,3,4,5]))
 ```
 
 ### Condicionales (if - elif - else)
-Para la toma de decisiones.  
+Para la toma de decisiones. 
 
 ```python
 entrada = input("Introduce un número entero: ")
@@ -214,9 +214,9 @@ numero = int(entrada)
 if numero == 42: 
 	print("Has elegido 42")
 elif numero < 42: 
-	print("El número es menor que 42")
+	print("El número", numero, "es menor que 42")
 else: 
-	print("El número es mayor que 42")
+	print("El número", numero, "es mayor que 42")
 ```
 
 ### Bucles con Python
@@ -238,8 +238,19 @@ for ninja in ninjas:
 
 # Cuarto ejemplo
 valoraciones = {'Alien':9.5, 'Terminator 2':8.9, 'Arma Letal':7.3}
+
+for peli in valoraciones.keys(): 
+	print("pelicula:" + peli)
+	
+
+for valoracion in valoraciones.values(): 
+	# str(x) -> convierte x a tipo cadena de caracteres para 
+	# poder encadenarla a "valoraciones:"
+	print("valoraciones:" + str(valoracion)) 
+
 for peli, puntuacion in valoraciones.items(): 
 	print(peli, "tiene una puntuacion de", puntuacion)
+
 
 # Quinto ejemplo: cálculo de la suma
 numeros = [34, 12, 93, 783, 330, 896, 1, 55]
@@ -254,6 +265,14 @@ for x in range(2, 6):
 	numero = x**2
 	lista.append(numero)
 print(lista)
+
+# Séptimo ejemplo: Bucle doble
+valoraciones = {'Alien':9.5, 'Terminator 2':8.9, 'Arma Letal':7.3}
+estudiantes = ['Harry', 'Hermione', 'Ron']
+for estudiante in estudiantes: 
+	for peli, valoracion in valoraciones.items(): 
+		print(estudiante, "vió", peli, "y le puso una nota de", valoracion)
+
 ```
 
 ### Para los más pro
@@ -261,11 +280,11 @@ print(lista)
 
 ```python
 # version newbie
-lst=[1,2,3,4,5,6,7,8,9,10]      
+lst=[1,2,3,4,5,6,7,8,9,10] 
 print (lst)
 
 # version pro
-​lst=[i for i in range(1, 11)]   
+lst=[i for i in range(1, 11)]
 print (lst)
 ```
 
@@ -273,8 +292,9 @@ print (lst)
 
 ```python
 # pares version newbie
+lst=[1,2,3,4,5,6,7,8,9,10] 
 lst2=[]
-for e in lst:                   
+for e in lst:
 	if e%2==0: 
 		lst2.append(e)
 print (lst2)
@@ -289,7 +309,7 @@ for e in lst:
 	if e%2==1: 
 		lst2.append(e)
 print (lst2)
-​
+
 # impares version pro
 lst2=[e for e in lst if e%2==1]
 print (lst2)
@@ -299,17 +319,18 @@ print (lst2)
 
 ```python
 # pares -> 0, impares -> 1​
+lst=[1,2,3,4,5,6,7,8,9,10] 
 
 # version newbie
 lst3=[]
-for e in lst:       
+for e in lst:
 	if e%2==0: 
 		lst3.append(0)
 	else: 
 		lst3.append(1)
 print (lst3)
 
-​# version pro
+# version pro
 lst3=[0 if e%2==0 else 1 for e in lst] 
 print (lst3)
 
@@ -331,20 +352,27 @@ print (lst3)
 4. Sumar todos los elementos de la primera lista (dos versiones). 
 
 ```python
+lst=[1,2,3,4,5,6,7,8,9,10] 
 # version 1
-suma=0         
+suma=0
 for e in lst:
 	suma+=e
 print (suma)
 
 # version 2
-suma=sum(lst)    
+suma=sum(lst)
 print (suma)
 ```
 
 ## Ejemplo de prueba de acceso
 
-A continuación hay una muestra de la antígua prueba de nivel. Ya no se suele pedir esto pero te puede dar una idea de lo que se te preguntará. **Recomendamos que resuelvas este problema antes de presentarte a la prueba**. 
+### Intro
+
+En la sección **El problema** está el enunciado y solución esperada de la antígua prueba de nivel. Ahora la utilizaremos en Ironhack Madrid para que compruebes si has adquirido bien los conceptos de las secciones anteriores y si sabes ponerlos en práctica. **Al mismo tiempo que reservas tu cita para la prueba técnica, queremos que envíes tu solución a admissions de Ironhack Madrid.** 
+
+* email admissions: **mad@ironhack.com**
+
+### El problema
 
 Dada una lista de números enteros: 
 ```python
