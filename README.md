@@ -394,9 +394,10 @@ print (suma)
 
 ### Intro
 
-En la sección **El problema** está el enunciado y solución esperada de la antígua prueba de nivel. Ahora la utilizaremos en Ironhack Madrid para que compruebes si has adquirido bien los conceptos de las secciones anteriores y si sabes ponerlos en práctica. **Al mismo tiempo que reservas tu cita para la prueba técnica, queremos que envíes tu solución a admissions de Ironhack Madrid.** 
+En la sección **El problema** está el enunciado y solución esperada de la antígua prueba de nivel. Ahora lo utilizaremos en Ironhack Madrid para que compruebes si has adquirido bien los conceptos de las secciones anteriores y si sabes ponerlos en práctica. 
 
-* email admissions: **mad@ironhack.com**
+Una vez hayas resuelto el problema, envía tu solución a admissions de Ironhack Madrid (mad@ironhack.com) y reserva tu cita para la prueba técnica aquí (link a https://calendly.com/ta-data-mad/30min/01-22-2019)
+
 
 ### El problema
 
