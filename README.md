@@ -275,6 +275,32 @@ for estudiante in estudiantes:
 
 ```
 
+### Indentación y errores
+Otros lenguajes menos amigables con los nuevos programadores usan llaves **{}** para encerrar código que debe ir dentro de un bloque. Si te has fijado cada vez que hemos usado for, if, else hemos puesto : y luego el resto del código va tabulado (indentado) a la derecha. Y así podemos anidar código. 
+```python
+# Este código da error de indentación. print(x) debería estár más a la derecha
+for x in range(10): 
+print(x)
+```
+Verás que Python lanza un error. Lo que debes hacer es tabular correctamente la línea indicada
+
+![](./images/indentation-error.png)
+
+```python
+# Este código tiene doble indentación
+valoraciones = {'Alien':9.5, 'Terminator 2':8.9, 'Arma Letal':7.3}
+estudiantes = ['Harry', 'Hermione', 'Ron']
+for estudiante in estudiantes: 
+	# en este nivel estamos dentro del primer for
+	print(">>> estamos dentro del primer for hablando de", estudiante)
+	for peli, valoracion in valoraciones.items(): 
+		# en este nivel estamos dentro del segundo for
+		print(">>> estamos dentro del segundo for hablando de", peli, "y de", estudiante)
+		print(estudiante, "vió", peli, "y le puso una nota de", valoracion)
+```
+
+
+
 ### Para los más pro
 1. Crear una lista del 1 al 10​. 
 
