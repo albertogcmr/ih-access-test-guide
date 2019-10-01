@@ -11,7 +11,22 @@ Contiene tres secciones:
 
 ## Programación online
 
-Para programar sin tener que instalarte ningún software hazte una cuenta en **repl**. Podrás practicar todo lo que quieras en Python y en muchos otros lenguajes de programación. Intenta probar todo lo que se muestra en este documento, incluido el ejemplo de prueba de acceso. 
+Para programar sin tener que instalarte ningún software hazte una cuenta en [repl](https://repl.it/repls). Podrás practicar todo lo que quieras en Python y en muchos otros lenguajes de programación. Intenta probar todo lo que se muestra en este documento, incluido el ejemplo de prueba de acceso.
+
+Otra opción es usar un notebook de Python3 en [colab](https://colab.research.google.com), de Google. 
+
+### 1. Colab de Google
+
+https://colab.research.google.com
+
+![](images/colab-01.png)
+
+Debes seleccionar la opción `Nuevo cuarderno de python 3` empezar a programar. 
+
+![](images/colab-02.png)
+
+
+### 2. Repl
 
 https://repl.it/repls
 
