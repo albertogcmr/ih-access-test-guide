@@ -6,10 +6,11 @@ Las nóminas de nuestros empleados están en esta lista de números.
 ```python
 nominas = [1900, 2000, 1800, 2400, 1700, 1950, 2000, 1806, 2400, 1700]
 ```
-1. ¿Cuánto gasta la empresa en nóminas mensuálmente? ¿Y de forma anual?
+1. ¿Cuánto gasta la empresa en nóminas mensualmente? ¿Y de forma anual?
 2. ¿Cuál es la nómina más alta? ¿y la más baja?
 3. ¿Cuál es la media de las nóminas en la empresa?
 4. Si las nóminas estuvieran en dólares y las quisiéramos en euros cuál sería la nueva lista de nóminas? **1 EUR = 1.09 DOL**
+5. Bonus: Pasa a dólares las nóminas de más de 2000 Euros solamente. 
 
 ## Fechas (strings)
 
@@ -19,6 +20,7 @@ fecha = "10/03/2016"
 1. Obtén el día, mes y año de esta fecha
 2. Dada una fecha en formato `dd/mm/yy` calcula el número de días que tiene ese mes. Puedes ignorar si es bisiesto o no. 
 3. Ahora pide la fecha al usuario mediante la función `input()` e imprime `día, mes y año` por consola. 
+4. Bonus: Reutiliza el código con una función que devuelva día, mes y año. 
 
 ## Netflix (diccionarios)
 
@@ -42,4 +44,4 @@ netflix = [padrino, lista, doce, vida, bueno, cadena, siete]
 2. ¿Cuántas películas hay en nuestra playlist de Netflix?
 3. ¿Cuántas películas de `Drama` hay en nuestra playlist de Netflix?
 4. ¿Cuántas películas de `Drama` anteriores a `1990` hay en nuestra playlist de Netflix?
-
+5. Bonus: ¿Cuál es el título con el nombre más largo?
